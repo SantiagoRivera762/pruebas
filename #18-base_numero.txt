@@ -1,0 +1,34 @@
+//codigo realizado en c#
+List<int> cociente = new List<int>();
+List<int> residuo = new List<int>();
+int completo;
+int valoecero = 0;
+int numerouno, numerodos, cocienteres, residuores;
+string lectura;
+Console.WriteLine("escriba un numero");
+lectura=Console.ReadLine();
+numerouno = int.Parse(lectura);
+Console.WriteLine("escriba la base");
+lectura = Console.ReadLine();
+numerodos = int.Parse(lectura);
+
+    for(int j = 0; j <= valoecero; j++)
+    {
+        cocienteres = numerouno / numerodos;
+        cociente.Add(cocienteres);
+        numerouno = cocienteres;
+        residuores = numerouno % numerodos;
+        residuo.Add(residuores);
+        valoecero = residuores;
+        j = 0;
+    }
+ 
+foreach(int numero in residuo)
+{
+    completo = numero;
+    Console.WriteLine("el resultado es:" + numerouno + "=" + completo);
+}
+
+//codigo incompleto
+
+Console.ReadKey();
