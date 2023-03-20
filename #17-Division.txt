@@ -1,0 +1,18 @@
+Código consola c#
+int numerouno, numerodos, resultado;
+string lectura;
+Console.WriteLine("escriba un número");
+lectura=Console.ReadLine();
+numerouno = int.Parse(lectura);
+Console.WriteLine("escriba un número");
+lectura = Console.ReadLine();
+numerodos = int.Parse(lectura);
+for (int i = 0; i >= numerodos; i++)
+{
+    Console.WriteLine("el número ingresado es inválido, ingréselo de nuevo por favor");
+    lectura = Console.ReadLine();
+    numerodos = int.Parse(lectura);
+}
+resultado = numerouno / numerodos;
+Console.WriteLine("la división de estos números es :" + resultado);
+Console.ReadKey();
